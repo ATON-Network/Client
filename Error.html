@@ -1,0 +1,100 @@
+<!DOCTYPE Html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
+    <link rel="icon" href="../AtonLogo.ico"/>
+    <title>Connection Failed</title>
+</head>
+
+<style>
+    body, h1, h2, h3, h4, p, a { color: #e0e2f4; }
+
+    body,
+    p { font: normal 20px/1.25rem 'VT323', monospace; }
+    h1 { font: normal 2.75rem/1.05em 'VT323', monospace; }
+    h2 { font: normal 2.25rem/1.25em 'VT323', monospace; }
+    h3 { font: lighter 1.5rem/1.25em 'VT323', monospace; }
+    h4 { font: lighter 1.125rem/1.2222222em 'VT323', monospace; }
+
+    body { background: #0414a7; }
+    
+    .move-right {
+        transform: translateX(40px)
+    }
+    
+    .align-middle {
+        vertical-align: middle;
+    }
+    
+    .container {
+        width: 90%;
+        margin: auto;
+        max-width: 640px;
+    }
+
+    .bsod {
+        padding-top: 10%;
+
+        .neg {
+            text-align: center;
+            color: #0414a7;
+
+            .bg {
+                background: #aaaaaa;
+                padding: 0 15px 2px 13px;
+            }
+        }
+        .title { margin-bottom: 50px; }
+        .nav {
+            margin-top: 35px;
+            text-align: center;
+
+            .link {
+                text-decoration: none;
+                padding: 0 9px 2px 8px;
+
+                &:hover,
+                &:focus {
+                    background: #aaaaaa;
+                    color: #0414a7;
+                }
+            }
+        }
+    }
+</style>
+
+<main class="bsod container">
+    <h1 class="neg title"><span class="bg">Error - Connection Failed</span></h1>
+    
+    <p class="move-right">
+        An error occured while attempting to navigate you to ATON's servers.
+        <br/>
+        Possible causes of the error may include:
+    </p>
+    
+    <p class="move-right">
+        * Your internet connection is not online
+        <br/>
+        * ATON's servers may be updating which would cause a short downtime
+    </p>
+    
+    <p class="move-right">If ATON's servers are offline, a community announcement should be posted.</p>
+    <p class="move-right">If you are experiencing another issue, please head over to one of our communities below and contact support.</p>
+    
+    <nav class="nav">
+        <a href="#" class="link"><i class="ph-bold ph-steam-logo align-middle"></i> Steam Community</a>
+        &nbsp;
+        |
+        &nbsp;
+        <a href="#" class="link"><i class="ph-bold ph-discord-logo align-middle"></i> Discord Community</a>
+    </nav>
+</main>
+
+</html>
